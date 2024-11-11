@@ -5,7 +5,7 @@ sequenceDiagram
 
     Note right of browser: User enters text and clicks 'save' button
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/new_notes
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_notes
     activate server
     Note left of server: JS code on server for new_notes action is executed
     server-->>browser: HTTP status code 302
